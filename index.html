@@ -1,0 +1,96 @@
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+
+    <body class="loading-body">
+    
+
+
+        <div class="spinner-box">
+            <div class="circle-border">
+                <div class="circle-core"></div>
+            </div>  
+        </div>
+     
+        
+        <div class="container-self">
+            <h1 style="font-size:34px;color:#2980b9;font-weight:800" id="header">আশ্রয়ণ-২ প্রকল্পের আওতায় মুজিববর্ষে গৃহ নির্মাণ সংশ্লিষ্ট তথ্যভাণ্ডার</h1>
+            
+            <div id="top-row">
+                
+                <div>
+                    <select id="dropdown" class="form-select" aria-label="Default select example">
+                    <option class="dropdown-item" value="Choose a Upozila" selected>Choose a Upozila</option>
+                    <option class="dropdown-item" value="sadar">নাটোর সদর</option>
+                    <option class="dropdown-item" value="lalpur">লালপুর</option>
+                    <option class="dropdown-item" value="bagati">বাগাতিপারা</option>
+                    <option class="dropdown-item" value="barai">বরাইগ্রাম</option>
+                    <option class="dropdown-item" value="singra">সিংড়া</option>
+                    <option class="dropdown-item" value="gurudaspur">গুরুদাসপুর</option>
+                    <option class="dropdown-item" value="noldanga">নলডাঙ্গা</option>
+                    <option class="dropdown-item" value="reset"d>Reset</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3" id= "search" >
+                    <span class="input-group-text" id="basic-addon1">Search</span>
+                    <input type="text" class="form-control" placeholder="email@example.com" aria-label="Username" aria-describedby="basic-addon1" id="searchField">
+                </div>
+            </div>
+            
+            <div class="table-container">
+    
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                        <th style="white-space: normal;" scope="col">ঘর ক্রমিক নং</th>
+                        <th style="white-space: normal;" scope="col">উপকারভোগীর তথ্য - নাম, পিতা/ স্বামী, স্ত্রীর নাম</th>
+                        <th style="white-space: no;" scope="col">পেশা</th>
+                        <th style="white-space: no;" scope="col">আয়</th>
+                        <th style="white-space: no;" scope="col">উপজেলা</th>
+                        <!-- <th scope="col">View More</th> -->
+                        <th style="white-space: no;" scope="col">উনিয়ন</th>
+                        <th style="white-space: normal;" scope="col">ঠিকানা (গ্রাম/ওয়ার্ড/ইউনিয়ন)</th>
+                        <th scope="col" style="white-space: normal;">জাতীয় পরিচয় পত্র</th>
+                        <th scope="col" style="white-space: normal;">মোবাইল নং</th>
+                        <th scope="col" style="white-space: normal;">ঘর এবং উপকারভোগীর ছবি</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody id = "searchResults">
+                        
+                    </tbody>
+                </table>
+                
+                <template id = "rowTemplate">
+                    <tr>
+                        <th style="white-space: normal;" scope="row" class="sn"></th>
+                        <td style="white-space: normal;" class="subscriber"></td>
+                        <td style="white-space: normal;" class="occupation"></td>
+                        <td style="white-space: normal;" class="income"></td>
+                        <td style="white-space: normal;" class="upozila"></td>
+                        <!-- <th scope="col"> <button type ="button" class="btn btn-outline-dark">View</button> </th> -->
+                        <td style="white-space: normal;" class="union"></td>
+                        <td style="white-space: normal;"class="addrs"></td>
+                        <td style="white-space: normal;"class="nid"></td>
+                        <td style="white-space: normal;"class="phn"></td>
+                        <td style="white-space: normal;"class="img"></td>                        
+                    </tr>
+                </template>
+            </div>
+            
+        </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>    
+    <script src="index.js"></script>
+    
+  </body>
+</html>
