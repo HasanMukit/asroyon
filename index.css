@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9em;
-  min-width: 400px;
+  min-width: 600px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -103,24 +103,24 @@
 
 
 #top-row {
-  margin-left: auto;
-  margin-right: auto;
   display: none;
-  justify-content: space-between;  
-  text-align: left;
-  margin-bottom: 30px;
+  justify-content: center;  
+  text-align: center;
+  flex-wrap: wrap;  
+}
+
+#top-row > * {
+  flex-wrap: 1 1 10em;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+
+#search {
+  max-width: 800px;
   
 }
-#search {
-  max-width: 1200px;
-  min-width: 600px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-#dropdown {
-  max-width: 400px;
-  min-width: 220px;
-}
+
 
 .container-self { 
     padding-top: 25px;
